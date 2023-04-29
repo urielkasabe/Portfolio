@@ -3,22 +3,23 @@
     <h1>My Skills</h1>
     <div class="logos">
       <div id="vue">
-        <vueLogo></vueLogo>
-        <vite></vite>
-        <vutify></vutify>
+        <vueLogo v-motion-pop-visible-once></vueLogo>
+        <vite v-motion-pop-visible-once></vite>
+        <vutify v-motion-pop-visible-once></vutify>
         <img
           src="https://cdn.cosmicjs.com/85825af0-b806-11ec-a20f-432bdea59662-vuex.png"
           alt="vuex"
           id="vuex"
+          v-motion-pop-visible-once
         />
       </div>
-      <htmlLogo></htmlLogo>
-      <css></css>
-      <js></js>
-      <git></git>
-      <github></github>
-      <sass></sass>
-      <BS></BS>
+      <htmlLogo v-motion-pop-visible-once></htmlLogo>
+      <css v-motion-pop-visible-once></css>
+      <js v-motion-pop-visible-once></js>
+      <git v-motion-pop-visible-once></git>
+      <github v-motion-pop-visible-once></github>
+      <sass v-motion-pop-visible-once></sass>
+      <BS v-motion-pop-visible-once></BS>
     </div>
   </section>
 </template>

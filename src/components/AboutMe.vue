@@ -1,7 +1,7 @@
 <template>
   <section>
-    <p>uriel Kasabe</p>
-    <img src="../../media/uri.jpg" alt="profile picture" />
+    <p v-motion-slide-visible-left>Uriel Kasabe</p>
+    <img src="../../media/uri.jpg" alt="profile picture"  v-motion-roll-visible-right/>
     <div>
       <h1>About me</h1>
       <h2>
