@@ -7,18 +7,8 @@
       Frontend developer specilized in <span class="vue">Vue.js</span>
     </h2>
   </div>
-  <button @click="upScroll" v-if="scrolled > 0">
-    <svg
-    class="arrowUp"
-      viewBox="0 0 1024 1024"
-      xmlns="http://www.w3.org/2000/svg"
-      data-v-ea893728=""
-    >
-      <path
-        fill="currentColor"
-        d="M572.235 205.282v600.365a30.118 30.118 0 1 1-60.235 0V205.282L292.382 438.633a28.913 28.913 0 0 1-42.646 0 33.43 33.43 0 0 1 0-45.236l271.058-288.045a28.913 28.913 0 0 1 42.647 0L834.5 393.397a33.43 33.43 0 0 1 0 45.176 28.913 28.913 0 0 1-42.647 0l-219.618-233.23z"
-      ></path>
-    </svg>
+  <button @click="upScroll" v-if="scrolled > 0" class="btn-up">
+    <el-icon style="font-size: 2.5rem"><Top /></el-icon>
   </button>
   <about> </about>
   <Theskills></Theskills>
@@ -64,7 +54,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
-button {
+.btn-up {
   cursor: pointer;
   position: fixed;
   left: 92%;
@@ -79,18 +69,21 @@ button {
   border: 0;
 }
 
-button:hover {
+.btn-up:hover {
   background-color: rgba(255, 255, 255, 0.671);
 
 }
 
- .arrowUp {
-margin: 0 auto;
+.el-icon {
+ margin: 0 auto;
 background-color: transparent;
-transform: translateY(10%);
-height: 2rem;
-width: 2rem;
-filter: none;
+ transform: translateY(10%); 
+color: rgb(12, 12, 12);
+}
+
+.el-icon svg{
+  margin: 0;
+  filter: none;
 }
 
 * {
