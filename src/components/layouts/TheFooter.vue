@@ -55,12 +55,14 @@ ul{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    position: relative;
+    right: 1%;
 }
 
 .rights{
     text-align: center;
-    position: relative;
-    left: 1%;
+/*     position: relative;
+    left: 1%; */
 }
 
 @media screen and (max-width: 768px) {

@@ -7,9 +7,7 @@
       Frontend developer specilized in <span class="vue">Vue.js</span>
     </h2>
   </div>
-  <button @click="upScroll" v-if="scrolled > 0" class="btn-up">
-    <el-icon style="font-size: 2.5rem"><Top /></el-icon>
-  </button>
+  <upButton></upButton>
   <about> </about>
   <Theskills></Theskills>
   <footer>
@@ -22,69 +20,20 @@ import galaxy from './components/backgroundGalaxy.vue';
 import Theskills from './components/mySkills.vue';
 import about from './components/AboutMe.vue';
 import foot from './components/layouts/TheFooter.vue';
-export default {
+import upButton from './components/UpButton.vue';
+export default{
   components: {
     Theskills,
     galaxy,
     about,
     foot,
-  },
-  data() {
-    return {
-      scrolled: null,
-    };
-  },
-  methods: {
-    handleScroll() {
-      this.scrolled = window.scrollY > 0;
-    },
-    upScroll() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    },
-  },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  unmounted() {
-    window.removeEventListener('scroll', this.handleScroll);
+    upButton
   },
 };
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
-
-.btn-up {
-  cursor: pointer;
-  position: fixed;
-  left: 92%;
-  top: 85%;
-  align-items: center;
-  color: rgb(50, 49, 49);
-  z-index: 5;
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  background-color: rgba(254, 254, 255, 0.4);
-  border: 0;
-}
-
-.btn-up:hover {
-  background-color: rgba(255, 255, 255, 0.671);
-
-}
-
-.el-icon {
- margin: 0 auto;
-background-color: transparent;
- transform: translateY(10%); 
-color: rgb(12, 12, 12);
-}
-
-.el-icon svg{
-  margin: 0;
-  filter: none;
-}
 
 * {
   box-sizing: border-box;
@@ -152,7 +101,7 @@ hr {
 }
 
 .anim {
-  animation: typedesc 4s steps(25) 3s 1 normal both,
+  animation: typedesc 3s steps(25) 3s 1 normal both,
     blinkTextCursor 500ms steps(25) infinite normal;
 }
 
