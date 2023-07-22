@@ -20,6 +20,14 @@
       <github v-motion-pop-visible-once></github>
       <sass v-motion-pop-visible-once></sass>
       <BS v-motion-pop-visible-once></BS>
+      <div>
+        <img
+          v-motion-pop-visible-once
+          width="152"
+          alt="Node.js logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/128px-Node.js_logo.svg.png"
+        />
+      </div>
     </div>
   </section>
 </template>

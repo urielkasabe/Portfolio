@@ -10,6 +10,7 @@
   <upButton></upButton>
   <about> </about>
   <Theskills></Theskills>
+
   <footer>
     <foot> </foot>
   </footer>
@@ -21,13 +22,15 @@ import Theskills from './components/mySkills.vue';
 import about from './components/AboutMe.vue';
 import foot from './components/layouts/TheFooter.vue';
 import upButton from './components/UpButton.vue';
+
 export default{
   components: {
     Theskills,
     galaxy,
     about,
     foot,
-    upButton
+    upButton,
+
   },
 };
 </script>
